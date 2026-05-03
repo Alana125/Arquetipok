@@ -1,0 +1,871 @@
+[
+  {
+    "id": 1,
+    "title": "Casa de Harry Potter",
+    "category": "Entretenimento",
+    "icon": "⚡",
+    "description": "Descubra qual casa de Hogwarts combina com você!",
+    "questions": [
+      {
+        "text": "Qual é a sua qualidade mais valorizada?",
+        "options": [
+          { "text": "Coragem", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Inteligência", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Lealdade", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Astúcia", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você faria em uma situação perigosa?",
+        "options": [
+          { "text": "Enfrentar diretamente", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Pensar em uma solução inteligente", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Proteger meus amigos", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Usar estratégia para vencer", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual animal você escolheria como mascote?",
+        "options": [
+          { "text": "Leão", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Águia", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Texugo", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Cobra", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você prefere passar seu tempo livre?",
+        "options": [
+          { "text": "Explorando aventuras", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Lendo e aprendendo", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Ajudando os outros", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Planejando o futuro", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é o seu maior medo?",
+        "options": [
+          { "text": "Fracassar em ajudar", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Não saber algo", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Perder amizades", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Ser traído", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você resolve conflitos?",
+        "options": [
+          { "text": "Com ação direta", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Com lógica e razão", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Com diplomacia", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Com manipulação inteligente", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual cor combina mais com você?",
+        "options": [
+          { "text": "Vermelho", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Azul", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Amarelo", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Verde", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que motiva você?",
+        "options": [
+          { "text": "Honra e justiça", "points": [{ "category": "Grifinória", "value": 1 }] },
+          { "text": "Conhecimento", "points": [{ "category": "Corvinal", "value": 1 }] },
+          { "text": "Harmonia e paz", "points": [{ "category": "Lufa-Lufa", "value": 1 }] },
+          { "text": "Poder e sucesso", "points": [{ "category": "Sonserina", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Grifinória", "title": "Grifinória", "description": "Você é corajoso e valente, sempre pronto para a ação e defender o que é certo!" },
+      { "category": "Corvinal", "title": "Corvinal", "description": "Você é inteligente e curioso, ama aprender e resolver enigmas complexos!" },
+      { "category": "Lufa-Lufa", "title": "Lufa-Lufa", "description": "Você é leal e trabalhador, valoriza amizades e ajuda os outros!" },
+      { "category": "Sonserina", "title": "Sonserina", "description": "Você é astuto e ambicioso, sempre planeja à frente para alcançar seus objetivos!" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Você é introvertido ou extrovertido?",
+    "category": "Personalidade",
+    "icon": "🧘",
+    "description": "Descubra se você recarrega energia sozinho ou com os outros!",
+    "questions": [
+      {
+        "text": "Como você se sente após uma festa?",
+        "options": [
+          { "text": "Energizado e animado", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Cansado e precisando de silêncio", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Neutro, depende da festa", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Feliz, mas prefiro grupos pequenos", "points": [{ "category": "Ambivertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você prefere fazer sozinho?",
+        "options": [
+          { "text": "Pouco, gosto de companhia", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Muito, é relaxante", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Às vezes, depende do humor", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Ler ou pensar", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você toma decisões?",
+        "options": [
+          { "text": "Discutindo com amigos", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Pensando sozinho", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Um pouco de ambos", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Pesquisando opiniões", "points": [{ "category": "Ambivertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Onde você prefere trabalhar?",
+        "options": [
+          { "text": "Em um escritório movimentado", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Em casa, sozinho", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Café com algumas pessoas", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Biblioteca silenciosa", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com conflitos?",
+        "options": [
+          { "text": "Conversando abertamente", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Processando internamente", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Tentando mediar", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Escrevendo pensamentos", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que recarrega sua energia?",
+        "options": [
+          { "text": "Interagir com pessoas", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Tempo sozinho", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Atividades variadas", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Natureza solitária", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você prefere celebrar?",
+        "options": [
+          { "text": "Festa grande com amigos", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Jantar íntimo", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Algo moderado", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Viagem sozinho", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você faz em um dia chuvoso?",
+        "options": [
+          { "text": "Chamo amigos para conversar", "points": [{ "category": "Extrovertido", "value": 1 }] },
+          { "text": "Leio um livro em casa", "points": [{ "category": "Introvertido", "value": 1 }] },
+          { "text": "Assisto série com alguém", "points": [{ "category": "Ambivertido", "value": 1 }] },
+          { "text": "Penso e reflito", "points": [{ "category": "Introvertido", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Introvertido", "title": "Introvertido", "description": "Você recarrega energia no silêncio e reflexão. Valoriza conexões profundas e tempo sozinho." },
+      { "category": "Extrovertido", "title": "Extrovertido", "description": "Você ganha energia com interações sociais. Ama estar rodeado de pessoas e atividades." },
+      { "category": "Ambivertido", "title": "Ambivertido", "description": "Você equilibra introversão e extroversão. Adapta-se bem a diferentes situações sociais." }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Qual deus grego você seria?",
+    "category": "Mitologia",
+    "icon": "⚡",
+    "description": "Descubra qual deus grego representa sua essência!",
+    "questions": [
+      {
+        "text": "Qual domínio você governaria?",
+        "options": [
+          { "text": "Trovões e céu", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Sabedoria e guerra", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Mar e terremotos", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Submundo", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você resolve disputas?",
+        "options": [
+          { "text": "Com autoridade suprema", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Com estratégia inteligente", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Com força bruta", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Com justiça implacável", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu símbolo?",
+        "options": [
+          { "text": "Raio", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Coruja", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Tridente", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Capacete invisível", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com traição?",
+        "options": [
+          { "text": "Punindo severamente", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Planejando vingança", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Com ondas de fúria", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Com silêncio eterno", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é sua maior força?",
+        "options": [
+          { "text": "Poder absoluto", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Inteligência tática", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Força indomável", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Controle sobre a morte", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Onde você mora?",
+        "options": [
+          { "text": "Monte Olimpo", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Cidade de Atenas", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Profundezas do mar", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Reino subterrâneo", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você é visto pelos outros?",
+        "options": [
+          { "text": "Líder temido", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Deusa sábia", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Deus imprevisível", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Senhor misterioso", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu maior defeito?",
+        "options": [
+          { "text": "Infidelidade", "points": [{ "category": "Zeus", "value": 1 }] },
+          { "text": "Falta de compaixão", "points": [{ "category": "Atena", "value": 1 }] },
+          { "text": "Raiva explosiva", "points": [{ "category": "Poseidon", "value": 1 }] },
+          { "text": "Solidão eterna", "points": [{ "category": "Hades", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Zeus", "title": "Zeus", "description": "Rei dos deuses, poderoso e autoritário. Você governa com mão de ferro e trovões!" },
+      { "category": "Atena", "title": "Atena", "description": "Deusa da sabedoria e guerra justa. Você é estratégica e valoriza o conhecimento!" },
+      { "category": "Poseidon", "title": "Poseidon", "description": "Deus do mar, forte e imprevisível. Suas emoções são como ondas do oceano!" },
+      { "category": "Hades", "title": "Hades", "description": "Senhor do submundo, justo e solitário. Você controla o que está oculto!" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Qual profissão combina com você?",
+    "category": "Carreira",
+    "icon": "💼",
+    "description": "Descubra qual carreira é perfeita para sua personalidade!",
+    "questions": [
+      {
+        "text": "O que você prefere fazer no trabalho?",
+        "options": [
+          { "text": "Liderar equipes", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Criar e inovar", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Ajudar pessoas", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Analisar dados", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com pressão?",
+        "options": [
+          { "text": "Motiva-me a agir", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Inspira criatividade", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Foca-me no essencial", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Organiza-me melhor", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual ambiente de trabalho ideal?",
+        "options": [
+          { "text": "Escritório executivo", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Estúdio criativo", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Hospital ou clínica", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Laboratório ou escritório", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que motiva você financeiramente?",
+        "options": [
+          { "text": "Crescer meu império", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Liberdade criativa", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Impacto social", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Estabilidade e crescimento", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você toma decisões de carreira?",
+        "options": [
+          { "text": "Com visão de longo prazo", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Seguindo paixão", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Baseado em ajudar outros", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Com análise racional", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu maior medo profissional?",
+        "options": [
+          { "text": "Falhar no negócio", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Perder inspiração", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Não salvar vidas", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Cometer erros críticos", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com fracasso?",
+        "options": [
+          { "text": "Vejo como oportunidade", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Recomeço com nova ideia", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Aprendo para melhorar", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Analiso o que deu errado", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você valoriza mais no trabalho?",
+        "options": [
+          { "text": "Sucesso e riqueza", "points": [{ "category": "Empresário", "value": 1 }] },
+          { "text": "Expressão pessoal", "points": [{ "category": "Designer", "value": 1 }] },
+          { "text": "Servir à humanidade", "points": [{ "category": "Médico", "value": 1 }] },
+          { "text": "Precisão e eficiência", "points": [{ "category": "Analista", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Empresário", "title": "Empresário", "description": "Você é um líder nato, visionário e determinado. Construir impérios é sua paixão!" },
+      { "category": "Designer", "title": "Designer", "description": "Criativo e inovador, você transforma ideias em realidade visual. A arte é sua voz!" },
+      { "category": "Médico", "title": "Médico", "description": "Compassionate e dedicado, você salva vidas e cuida dos outros com dedicação!" },
+      { "category": "Analista", "title": "Analista", "description": "Lógico e preciso, você resolve problemas complexos com dados e razão!" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Qual personagem de filme você seria?",
+    "category": "Entretenimento",
+    "icon": "🎬",
+    "description": "Descubra qual personagem icônico combina com você!",
+    "questions": [
+      {
+        "text": "Como você enfrenta desafios?",
+        "options": [
+          { "text": "Com coragem e ação", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Com inteligência e planos", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Com humor e leveza", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Com mistério e intriga", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu superpoder?",
+        "options": [
+          { "text": "Força e bravura", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Invenções incríveis", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Fazer rir", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Manipulação", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você interage com amigos?",
+        "options": [
+          { "text": "Protegendo-os", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Ensinando-lhes", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Fazendo-os sorrir", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Usando-os para meus fins", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu maior defeito?",
+        "options": [
+          { "text": "Ser muito idealista", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Ignorar emoções", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Não levar nada a sério", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Ser egoísta", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você termina histórias?",
+        "options": [
+          { "text": "Salvando o dia", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Com uma invenção", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Com uma piada", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Dominando tudo", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu veículo favorito?",
+        "options": [
+          { "text": "Moto ou carro veloz", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Laboratório móvel", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Carro engraçado", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Nave futurista", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com amor?",
+        "options": [
+          { "text": "Romântico e protetor", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Complicado e intelectual", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Leve e divertido", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Intenso e possessivo", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu legado?",
+        "options": [
+          { "text": "Inspirar coragem", "points": [{ "category": "Herói", "value": 1 }] },
+          { "text": "Avançar ciência", "points": [{ "category": "Gênio", "value": 1 }] },
+          { "text": "Espalhar alegria", "points": [{ "category": "Comediante", "value": 1 }] },
+          { "text": "Mudar o mundo", "points": [{ "category": "Vilão", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Herói", "title": "Herói", "description": "Corajoso e altruísta, você sempre luta pelo bem maior. O mundo precisa de pessoas como você!" },
+      { "category": "Gênio", "title": "Gênio", "description": "Inteligente e inovador, suas ideias mudam o mundo. A ciência é seu playground!" },
+      { "category": "Comediante", "title": "Comediante", "description": "Divertido e leve, você traz alegria para todos. O riso é sua maior arma!" },
+      { "category": "Vilão", "title": "Vilão", "description": "Complexo e ambicioso, você desafia o status quo. Às vezes, vilões têm razão!" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Que tipo de parceiro você é?",
+    "category": "Relacionamentos",
+    "icon": "❤️",
+    "description": "Descubra como você ama e se relaciona!",
+    "questions": [
+      {
+        "text": "Como você demonstra amor?",
+        "options": [
+          { "text": "Com atos de serviço", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Com palavras gentis", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Com presentes", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Com tempo de qualidade", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com conflitos no relacionamento?",
+        "options": [
+          { "text": "Tentando resolver calmamente", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Expressando sentimentos", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Dando espaço", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Conversando abertamente", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que é mais importante para você?",
+        "options": [
+          { "text": "Segurança emocional", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Paixão intensa", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Liberdade mútua", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Comunicação honesta", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você planeja o futuro?",
+        "options": [
+          { "text": "Construindo um lar", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Com aventuras juntos", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Apoio mútuo nos sonhos", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Discutindo metas", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu maior medo no amor?",
+        "options": [
+          { "text": "Ser abandonado", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Perder a paixão", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Perder independência", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Não ser compreendido", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você celebra aniversários?",
+        "options": [
+          { "text": "Com jantar caseiro", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Com declaração romântica", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Com viagem surpresa", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Com carta personalizada", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você valoriza mais no parceiro?",
+        "options": [
+          { "text": "Lealdade", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Paixão", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Independência", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Honestidade", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você resolve desentendimentos?",
+        "options": [
+          { "text": "Com compreensão", "points": [{ "category": "Cuidador", "value": 1 }] },
+          { "text": "Com gestos românticos", "points": [{ "category": "Romântico", "value": 1 }] },
+          { "text": "Com concessões", "points": [{ "category": "Generoso", "value": 1 }] },
+          { "text": "Com diálogo aberto", "points": [{ "category": "Atencioso", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Cuidador", "title": "Cuidador", "description": "Você ama profundamente e cuida do seu parceiro com dedicação. Segurança e conforto são sua prioridade!" },
+      { "category": "Romântico", "title": "Romântico", "description": "Paixão e emoção definem seu amor. Você vive intensamente cada momento!" },
+      { "category": "Generoso", "title": "Generoso", "description": "Você dá amor com liberdade. Apoia os sonhos do parceiro e valoriza independência!" },
+      { "category": "Atencioso", "title": "Atencioso", "description": "Comunicação e compreensão são chave. Você constrói relacionamentos baseados em respeito mútuo!" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Qual tipo de inteligência você tem?",
+    "category": "Inteligência",
+    "icon": "🧠",
+    "description": "Descubra como sua mente brilha!",
+    "questions": [
+      {
+        "text": "Como você aprende melhor?",
+        "options": [
+          { "text": "Vendo e fazendo", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Ouvindo explicações", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Lendo e escrevendo", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Discutindo ideias", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual atividade te deixa mais satisfeito?",
+        "options": [
+          { "text": "Construir ou consertar", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Ouvir música ou podcasts", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Resolver quebra-cabeças", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Ajudar os outros", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lembra de informações?",
+        "options": [
+          { "text": "Movendo-me ou tocando", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Repetindo em voz alta", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Visualizando imagens", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Relacionando com pessoas", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu hobby favorito?",
+        "options": [
+          { "text": "Esportes ou dança", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Tocar instrumento", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Desenhar ou fotografar", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Organizar eventos", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você resolve problemas?",
+        "options": [
+          { "text": "Experimentando soluções", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Discutindo opções", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Analisando visualmente", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Pedindo conselhos", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que te distrai facilmente?",
+        "options": [
+          { "text": "Ficar parado", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Silêncio", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Falta de cores", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Solidão", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você ensina algo?",
+        "options": [
+          { "text": "Mostrando como fazer", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Explicando verbalmente", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Desenhando diagramas", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Trabalhando em grupo", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual ambiente te deixa mais produtivo?",
+        "options": [
+          { "text": "Ativo e movimentado", "points": [{ "category": "Cinestésica", "value": 1 }] },
+          { "text": "Com música de fundo", "points": [{ "category": "Auditiva", "value": 1 }] },
+          { "text": "Organizado visualmente", "points": [{ "category": "Visual", "value": 1 }] },
+          { "text": "Com colegas próximos", "points": [{ "category": "Interpessoal", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Cinestésica", "title": "Cinestésica", "description": "Você aprende melhor através do movimento e toque. Corpo e mente trabalham juntos!" },
+      { "category": "Auditiva", "title": "Auditiva", "description": "Sons e palavras são sua força. Você processa informações através da audição!" },
+      { "category": "Visual", "title": "Visual", "description": "Imagens e cores falam com você. Você vê o mundo de forma visual!" },
+      { "category": "Interpessoal", "title": "Interpessoal", "description": "Relacionamentos são sua inteligência. Você entende pessoas como ninguém!" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Qual cidade combina com você?",
+    "category": "Estilo de Vida",
+    "icon": "🏙️",
+    "description": "Descubra qual cidade é seu lar espiritual!",
+    "questions": [
+      {
+        "text": "Qual ritmo de vida prefere?",
+        "options": [
+          { "text": "Rápido e agitado", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Relaxado e cultural", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Tranquilo e natural", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Moderno e tecnológico", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que te atrai em uma cidade?",
+        "options": [
+          { "text": "Oportunidades infinitas", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Arte e romance", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Natureza integrada", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Inovação e eficiência", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você passa fins de semana?",
+        "options": [
+          { "text": "Explorando bairros", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Cafés e museus", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Hiking e ar fresco", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Tecnologia e compras", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual clima combina com você?",
+        "options": [
+          { "text": "Quatro estações distintas", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Suave e chuvoso", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Fresco e ensolarado", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Quente e úmido", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "O que você valoriza na arquitetura?",
+        "options": [
+          { "text": "Arranha-céus icônicos", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Edifícios históricos", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Design moderno sustentável", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Mistura de tradicional e high-tech", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você se locomove na cidade?",
+        "options": [
+          { "text": "Metrô e táxi", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Bicicleta e caminhada", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Carro e transporte público", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Trem bala e metrô", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual culinária te atrai?",
+        "options": [
+          { "text": "Diversidade internacional", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Gastronomia refinada", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Orgânica e saudável", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Tradicional com twist moderno", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é sua energia urbana?",
+        "options": [
+          { "text": "Ambiciosa e competitiva", "points": [{ "category": "Nova York", "value": 1 }] },
+          { "text": "Elegante e artística", "points": [{ "category": "Paris", "value": 1 }] },
+          { "text": "Equilibrada e natural", "points": [{ "category": "Vancouver", "value": 1 }] },
+          { "text": "Dinâmica e futurista", "points": [{ "category": "Tóquio", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Nova York", "title": "Nova York", "description": "A cidade que nunca dorme! Você ama a energia, diversidade e oportunidades infinitas!" },
+      { "category": "Paris", "title": "Paris", "description": "Cidade luz! Você aprecia arte, cultura e o charme romântico da vida europeia!" },
+      { "category": "Vancouver", "title": "Vancouver", "description": "Paraíso natural urbano! Você valoriza equilíbrio, natureza e qualidade de vida!" },
+      { "category": "Tóquio", "title": "Tóquio", "description": "Futurista e tradicional! Você ama inovação, eficiência e a mistura perfeita de culturas!" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Que energia você transmite?",
+    "category": "Energia",
+    "icon": "⚡",
+    "description": "Descubra qual vibração você emana para o mundo!",
+    "questions": [
+      {
+        "text": "Como as pessoas te descrevem?",
+        "options": [
+          { "text": "Calmo e confiável", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Criativo e inspirador", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Intenso e apaixonado", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Profundo e misterioso", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual elemento te representa?",
+        "options": [
+          { "text": "Solo firme", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Vento livre", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Chama ardente", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Onda fluida", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você lida com mudança?",
+        "options": [
+          { "text": "Devagar e com estabilidade", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Adaptando-me rapidamente", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Com entusiasmo explosivo", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Fluindo com a corrente", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é sua maior força?",
+        "options": [
+          { "text": "Confiabilidade", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Criatividade", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Paixão", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Intuição", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você motiva os outros?",
+        "options": [
+          { "text": "Com estabilidade e apoio", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Com ideias inovadoras", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Com energia contagiante", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Com empatia profunda", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual ambiente te deixa confortável?",
+        "options": [
+          { "text": "Natureza sólida", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Espaços abertos", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Ambientes quentes", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Próximo à água", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você expressa emoção?",
+        "options": [
+          { "text": "Com ações práticas", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Com palavras poéticas", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Com intensidade dramática", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Com silêncio significativo", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual é seu impacto no mundo?",
+        "options": [
+          { "text": "Construir fundações sólidas", "points": [{ "category": "Terra", "value": 1 }] },
+          { "text": "Inspirar mudanças", "points": [{ "category": "Ar", "value": 1 }] },
+          { "text": "Acender paixões", "points": [{ "category": "Fogo", "value": 1 }] },
+          { "text": "Curar e transformar", "points": [{ "category": "Água", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Terra", "title": "Terra", "description": "Estável e confiável, você é a base sólida que sustenta tudo ao seu redor!" },
+      { "category": "Ar", "title": "Ar", "description": "Livre e criativo, você traz ideias frescas e inspiração para todos!" },
+      { "category": "Fogo", "title": "Fogo", "description": "Intenso e apaixonado, você acende a chama da motivação nos outros!" },
+      { "category": "Água", "title": "Água", "description": "Profundo e fluido, você adapta-se e transforma com sua intuição!" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Qual superpoder você teria?",
+    "category": "Fantasia",
+    "icon": "🦸",
+    "description": "Descubra qual poder extraordinário seria seu!",
+    "questions": [
+      {
+        "text": "Como você ajudaria o mundo?",
+        "options": [
+          { "text": "Protegendo os inocentes", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Resolvendo problemas complexos", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Viajando no tempo", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Controlando elementos", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual seria seu maior desafio?",
+        "options": [
+          { "text": "Controlar minha força", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Lidar com mentes alheias", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Não quebrar a realidade", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Não me perder na escuridão", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você usaria seu poder no dia a dia?",
+        "options": [
+          { "text": "Movendo objetos pesados", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Entendendo emoções", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Chegando rápido aos lugares", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Observando sem ser visto", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual seria seu traje de herói?",
+        "options": [
+          { "text": "Armadura resistente", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Capuz misterioso", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Traje aerodinâmico", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Manto camaleão", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você combate o mal?",
+        "options": [
+          { "text": "Com força bruta", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Manipulando mentes", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Atacando rapidamente", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Ataques surpresa", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual seria seu maior medo?",
+        "options": [
+          { "text": "Perder o controle", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Saber segredos demais", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Ficar preso no tempo", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Nunca ser encontrado", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Como você relaxa?",
+        "options": [
+          { "text": "Levantando pesos leves", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Meditando em paz", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Correndo em círculos", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Desaparecendo da vista", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      },
+      {
+        "text": "Qual seria seu legado?",
+        "options": [
+          { "text": "Proteção eterna", "points": [{ "category": "Super Força", "value": 1 }] },
+          { "text": "Paz mental global", "points": [{ "category": "Telepatia", "value": 1 }] },
+          { "text": "Tempo salvo para todos", "points": [{ "category": "Velocidade", "value": 1 }] },
+          { "text": "Segredos revelados", "points": [{ "category": "Invisibilidade", "value": 1 }] }
+        ]
+      }
+    ],
+    "results": [
+      { "category": "Super Força", "title": "Super Força", "description": "Invencível e protetor! Sua força move montanhas e salva o dia!" },
+      { "category": "Telepatia", "title": "Telepatia", "description": "Mestre da mente! Você lê pensamentos e traz harmonia interior!" },
+      { "category": "Velocidade", "title": "Velocidade", "description": "Mais rápido que a luz! Você corre contra o tempo e vence!" },
+      { "category": "Invisibilidade", "title": "Invisibilidade", "description": "Fantasma invisível! Você observa, protege e surpreende!" }
+    ]
+  }
+]

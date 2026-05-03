@@ -1,0 +1,178 @@
+.mascot {
+  display: inline-block;
+  position: relative;
+}
+
+.mascot__body {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  border-radius: 50%;
+  border: 3px solid #FF9FF3;
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.mascot:hover .mascot__body {
+  transform: scale(1.1);
+}
+
+.mascot__head {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 30px;
+}
+
+.mascot__eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.mascot__eye {
+  width: 8px;
+  height: 8px;
+  background: #2D3436;
+  border-radius: 50%;
+  position: relative;
+}
+
+.mascot__eye::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+}
+
+.mascot__mouth {
+  width: 12px;
+  height: 6px;
+  background: #2D3436;
+  border-radius: 0 0 6px 6px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mascot__mouth::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 3px;
+  background: #FF9FF3;
+  border-radius: 3px;
+}
+
+.mascot__arms {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.mascot__arm {
+  width: 8px;
+  height: 15px;
+  background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  border-radius: 4px;
+  transform: rotate(-20deg);
+}
+
+.mascot__arm--right {
+  transform: rotate(20deg);
+}
+
+/* Sizes */
+.mascot--small .mascot__body {
+  width: 40px;
+  height: 40px;
+}
+
+.mascot--small .mascot__head {
+  width: 30px;
+  height: 20px;
+  top: 8px;
+}
+
+.mascot--small .mascot__eye {
+  width: 6px;
+  height: 6px;
+}
+
+.mascot--small .mascot__mouth {
+  width: 8px;
+  height: 4px;
+}
+
+.mascot--small .mascot__arms {
+  gap: 15px;
+}
+
+.mascot--small .mascot__arm {
+  width: 6px;
+  height: 10px;
+}
+
+.mascot--large .mascot__body {
+  width: 80px;
+  height: 80px;
+}
+
+.mascot--large .mascot__head {
+  width: 50px;
+  height: 35px;
+  top: 12px;
+}
+
+.mascot--large .mascot__eye {
+  width: 10px;
+  height: 10px;
+}
+
+.mascot--large .mascot__mouth {
+  width: 15px;
+  height: 8px;
+}
+
+.mascot--large .mascot__arms {
+  gap: 25px;
+}
+
+.mascot--large .mascot__arm {
+  width: 10px;
+  height: 20px;
+}
+
+/* Moods */
+.mascot--excited .mascot__mouth {
+  height: 8px;
+  border-radius: 6px 6px 0 0;
+}
+
+.mascot--excited .mascot__mouth::after {
+  width: 8px;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+.mascot--sleepy .mascot__eye {
+  height: 4px;
+  border-radius: 4px 4px 2px 2px;
+}
+
+.mascot--sleepy .mascot__eye::after {
+  display: none;
+}
