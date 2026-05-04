@@ -14,17 +14,13 @@ function PlayQuiz({ quiz, onComplete, onBack }) {
   const handleAnswer = (option) => {
     setSelectedAnswer(option);
     setShowFeedback(true);
-    // Auto-advance after a short delay for better UX
-    setTimeout(() => {
-      handleNext();
-    }, 800);
+    // Pass the option directly to avoid state timing issues
+    processAnswer(option);
   };
 
-  const handleNext = () => {
-    if (!selectedAnswer) return;
-
+  const processAnswer = (option) => {
     const newScores = { ...scores };
-    selectedAnswer.points.forEach(point => {
+    option.points.forEach(point => {
       newScores[point.category] = (newScores[point.category] || 0) + point.value;
     });
     setScores(newScores);
@@ -76,11 +72,11 @@ function PlayQuiz({ quiz, onComplete, onBack }) {
 
       {showFeedback && (
         <div className="feedback-message">
-          <p>Resposta registrada! Preparando próxima pergunta...</p>
+          <p>Resposta registrada!</p>
         </div>
       )}
 
-      <Button onClick={handleNext} disabled={!selectedAnswer || showFeedback}>
+      <Button onClick={() => {}} disabled={true}>
         {currentQuestion < quiz.questions.length - 1 ? 'Próximo' : 'Finalizar'}
       </Button>
     </div>

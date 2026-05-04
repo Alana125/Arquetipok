@@ -4,6 +4,11 @@ import Mascot from '../components/Mascot';
 function Result({ quiz, result, score, onRefazer, onCompartilhar, onBack }) {
   if (!quiz || !result) return null;
 
+  // Calculate total score and percentage
+  const totalScore = Object.values(score).reduce((sum, val) => sum + val, 0);
+  const maxScore = quiz.questions.length;
+  const percentage = Math.round((totalScore / maxScore) * 100);
+
   const handleCompartilhar = () => {
     const text = `Acabei de fazer o quiz "${quiz.title}" e meu resultado foi: ${result.title}! Descubra o seu também no Arquetipo!`;
     if (navigator.share) {
@@ -35,7 +40,8 @@ function Result({ quiz, result, score, onRefazer, onCompartilhar, onBack }) {
         <h3 className="result-title">{result.title}</h3>
         <p className="result-description">{result.description}</p>
         <div className="result-score">
-          <span>Pontuação: {score} pontos</span>
+          <div className="score-percentage">{percentage}%</div>
+          <div className="score-details">Acurácia: {totalScore} de {maxScore}</div>
         </div>
       </div>
 

@@ -684,11 +684,28 @@ html {
 .result-score {
   background: linear-gradient(135deg, #6C5CE7, #A29BFE);
   color: white;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-xl);
   border-radius: 20px;
   font-weight: 600;
-  display: inline-block;
-  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(108, 92, 231, 0.4);
+  margin: var(--spacing-lg) 0;
+}
+
+.score-percentage {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.score-details {
+  font-size: 1.1rem;
+  opacity: 0.95;
 }
 
 .result-actions {

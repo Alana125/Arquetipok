@@ -34,6 +34,12 @@ function App() {
     setCurrentScreen('playQuiz');
   };
 
+  const handleQuizComplete = (result, score) => {
+    console.log('Quiz completado:', result, score);
+    setQuizResult({ result, score });
+    setCurrentScreen('result');
+  };
+
   const handleCompartilhar = () => {
     // Lógica de compartilhamento já está no componente Result
   };
