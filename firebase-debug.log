@@ -1,0 +1,19 @@
+[debug] [2026-06-13T23:33:36.799Z] ----------------------------------------------------------------------
+[debug] [2026-06-13T23:33:36.802Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\windows\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-06-13T23:33:36.802Z] CLI Version:   15.20.0
+[debug] [2026-06-13T23:33:36.802Z] Platform:      win32
+[debug] [2026-06-13T23:33:36.803Z] Node Version:  v24.16.0
+[debug] [2026-06-13T23:33:36.803Z] Time:          Sat Jun 13 2026 20:33:36 GMT-0300 (Brasilia Standard Time)
+[debug] [2026-06-13T23:33:36.803Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\windows\OneDrive\Desktop\Arquetipo\Arquetipok
+

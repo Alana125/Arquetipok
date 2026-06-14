@@ -1,6 +1,5 @@
 function BottomNav({ currentScreen, onNavigate }) {
   const navItems = [
-    { id: 'discover', label: 'Descobrir', icon: '🔍' },
     { id: 'leaderboard', label: 'Ranking', icon: '🏆' },
     { id: 'profile', label: 'Perfil', icon: '👤' }
   ];

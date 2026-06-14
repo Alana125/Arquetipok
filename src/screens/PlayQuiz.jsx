@@ -12,27 +12,27 @@ function PlayQuiz({ quiz, onComplete, onBack }) {
   const question = quiz.questions[currentQuestion];
 
   const handleAnswer = (option) => {
+    if (showFeedback) return;
+
     setSelectedAnswer(option);
     setShowFeedback(true);
-    // Pass the option directly to avoid state timing issues
-    processAnswer(option);
-  };
 
-  const processAnswer = (option) => {
-    const newScores = { ...scores };
+    const nextScores = { ...scores };
     option.points.forEach(point => {
-      newScores[point.category] = (newScores[point.category] || 0) + point.value;
+      nextScores[point.category] = (nextScores[point.category] || 0) + point.value;
     });
-    setScores(newScores);
-    setSelectedAnswer(null);
-    setShowFeedback(false);
+    setScores(nextScores);
 
-    if (currentQuestion < quiz.questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      // Passar os scores completos para o callback
-      onComplete(newScores);
-    }
+    setTimeout(() => {
+      setShowFeedback(false);
+      setSelectedAnswer(null);
+
+      if (currentQuestion < quiz.questions.length - 1) {
+        setCurrentQuestion((prev) => prev + 1);
+      } else {
+        onComplete(nextScores);
+      }
+    }, 450);
   };
 
   const progress = ((currentQuestion + 1) / quiz.questions.length) * 100;
@@ -62,7 +62,7 @@ function PlayQuiz({ quiz, onComplete, onBack }) {
               disabled={showFeedback}
             >
               {option.text}
-              {showFeedback && selectedAnswer === option && (
+              {selectedAnswer === option && showFeedback && (
                 <span className="feedback-icon">✓</span>
               )}
             </button>
@@ -77,7 +77,7 @@ function PlayQuiz({ quiz, onComplete, onBack }) {
       )}
 
       <Button onClick={() => {}} disabled={true}>
-        {currentQuestion < quiz.questions.length - 1 ? 'Próximo' : 'Finalizar'}
+        {currentQuestion < quiz.questions.length - 1 ? 'Respondendo...' : 'Finalizando...'}
       </Button>
     </div>
   );

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import LeaderboardItem from '../components/LeaderboardItem';
 
+// Accept an optional onBack prop to navigate back to home
+
 // Mock data
 const mockUsers = [
   { id: 1, name: 'Maria Santos', avatar: 'https://via.placeholder.com/50', score: 2450 },
@@ -10,7 +12,7 @@ const mockUsers = [
   { id: 5, name: 'Carla Oliveira', avatar: 'https://via.placeholder.com/50', score: 1100 },
 ];
 
-function Leaderboard() {
+function Leaderboard({ onBack }) {
   const [activeTab, setActiveTab] = useState('semanal');
 
   const weeklyUsers = mockUsers.slice(0, 3); // Mock weekly data
@@ -20,6 +22,10 @@ function Leaderboard() {
 
   return (
     <div className="leaderboard">
+      <div className="leaderboard-top">
+        <button className="back-button" onClick={onBack || (() => {})}>← Voltar</button>
+        <h2>Ranking</h2>
+      </div>
       <div className="tabs">
         <button
           className={`tab ${activeTab === 'semanal' ? 'active' : ''}`}

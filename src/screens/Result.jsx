@@ -4,18 +4,23 @@ import Mascot from '../components/Mascot';
 function Result({ quiz, result, score, onRefazer, onCompartilhar, onBack }) {
   if (!quiz || !result) return null;
 
-  // Calculate total score and percentage
-  const totalScore = Object.values(score).reduce((sum, val) => sum + val, 0);
-  const maxScore = quiz.questions.length;
-  const percentage = Math.round((totalScore / maxScore) * 100);
+  const totalScore = Object.values(score || {}).reduce((sum, value) => sum + value, 0);
+  const maxScore = quiz.questions.reduce((questionSum, question) => {
+    const highestOptionValue = question.options.reduce((optionMax, option) => {
+      const optionTotal = option.points.reduce((pointSum, point) => pointSum + point.value, 0);
+      return Math.max(optionMax, optionTotal);
+    }, 0);
+    return questionSum + highestOptionValue;
+  }, 0);
+  const percentage = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0;
 
   const handleCompartilhar = () => {
     const text = `Acabei de fazer o quiz "${quiz.title}" e meu resultado foi: ${result.title}! Descubra o seu também no Arquetipo!`;
     if (navigator.share) {
       navigator.share({
         title: 'Meu resultado no Arquetipo',
-        text: text,
-        url: window.location.href
+        text,
+        url: window.location.href,
       });
     } else {
       navigator.clipboard.writeText(text).then(() => {

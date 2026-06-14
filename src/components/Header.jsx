@@ -4,7 +4,6 @@ import Mascot from './Mascot';
 function Header({ user, currentScreen, onNavigate }) {
   const displayName = user.name === 'Usuário' ? 'Lyana' : user.name;
   const navItems = [
-    { id: 'discover', label: 'Descobrir' },
     { id: 'leaderboard', label: 'Ranking' },
     { id: 'profile', label: 'Perfil' }
   ];
@@ -32,7 +31,13 @@ function Header({ user, currentScreen, onNavigate }) {
               </button>
             ))}
           </nav>
-          <Avatar src={user.avatar} alt={displayName} size="small" />
+          <button
+            className="avatar-button"
+            onClick={() => onNavigate('profile')}
+            title="Ir para perfil"
+          >
+            <Avatar src={user.avatar} alt={displayName} size="small" />
+          </button>
         </div>
       </div>
     </header>

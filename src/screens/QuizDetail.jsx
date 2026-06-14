@@ -19,8 +19,7 @@ function QuizDetail({ quiz, onPlay, onBack }) {
       </div>
 
       <div className="quiz-actions">
-        <Button onClick={onPlay}>Jogar Solo</Button>
-        <Button variant="secondary">Jogar com Amigos</Button>
+        <Button onClick={onPlay}>Jogar</Button>
       </div>
     </div>
   );
